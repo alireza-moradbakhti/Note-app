@@ -58,17 +58,26 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.material.icons.extended)
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.material)
+    implementation(libs.androidx.material)
+
 
     // room db
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     implementation(libs.room.paging)
     kapt(libs.room.compiler)
+    testImplementation(libs.room.testing)
 
 
     // --- Dagger Hilt ---
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
+    implementation(libs.androidx.hilt.lifecycle.viewmodel)
+    kapt(libs.androidx.hilt.compiler)
 
     // --- Retrofit ---
     implementation(libs.retrofit.core)
@@ -80,9 +89,13 @@ dependencies {
     //constraint Layout for compose
     implementation(libs.androidx.constraintlayout.compose)
 
-    testImplementation(libs.room.testing)
+    // Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+
+
 }
 
 kapt {
-    correctErrorTypes= true
+    correctErrorTypes = true
 }
