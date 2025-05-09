@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">NoteApp</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="color">Color</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="header">Your Note</string>
+    <string name="snack_text">Note deleted</string>
+    <string name="action_snack">Undo</string>
 </resources>

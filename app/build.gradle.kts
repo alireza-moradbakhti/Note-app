@@ -59,7 +59,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.androidx.navigation.compose)
-    implementation(libs.androidx.material.icons.extended)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.material)
     implementation(libs.androidx.material)
@@ -73,11 +72,9 @@ dependencies {
     testImplementation(libs.room.testing)
 
 
-    // --- Dagger Hilt ---
+    //Dagger - Hilt
     implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
-    implementation(libs.androidx.hilt.lifecycle.viewmodel)
-    kapt(libs.androidx.hilt.compiler)
+    kapt (libs.hilt.android.compiler)
 
     // --- Retrofit ---
     implementation(libs.retrofit.core)
